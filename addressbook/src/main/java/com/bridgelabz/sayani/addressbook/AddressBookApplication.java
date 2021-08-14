@@ -1,10 +1,7 @@
 /**
- * UC2 : Create a Rest Controller to demonstrate the various HTTP Methods.
- 		- Before starting set application.properties to set properties of MySQL Driver and MySQL Credentials.
- 		- Use ResponseEntity to return JSON Response.
- 		- Test the REST Calls using CURL.
- 		- At this stage the interest is to establish the connectivity and ensure data is transmitted in REST Calls.
- 		- Make sure to test all CURL Calls – GET, GET by ID, POST, PUT to Update by ID, and DELETE
+ * UC3 : Introducing DTO and Model to AddressBook App.
+ * 			- Note that you can keep the DTO and Model fairly simplistic with only few fields.
+ * 			- Use ResponseEntity to return JSON Response.
  *
  * @author : SAYANI KOLEY
  * @since : 14.08.2021
