@@ -1,7 +1,8 @@
 /**
- * UC4 : Introducing Services Layer in AddressBook App.
- * 			- This is the job of services layer to manage the Model.
- * 			- Autowired Annotation will be used to do Dependency Injection of the Services Object to the Controller.
+ * UC5 : Ability for the Services Layer to store the AddressBook Data.
+ * 			- In this use case the Services Layer will store this	Data in a Memory as a List.
+ * 			- As we go further down we will persist this data in DB.
+ * 			- Make sure to test all CURL Calls – GET, GET by ID, POST, PUT to Update by ID, and DELETE.
  *
  * @author : SAYANI KOLEY
  * @since : 14.08.2021
