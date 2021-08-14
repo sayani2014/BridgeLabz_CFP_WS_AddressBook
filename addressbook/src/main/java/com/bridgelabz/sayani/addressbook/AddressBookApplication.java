@@ -1,7 +1,7 @@
 /**
- * UC3 : Introducing DTO and Model to AddressBook App.
- * 			- Note that you can keep the DTO and Model fairly simplistic with only few fields.
- * 			- Use ResponseEntity to return JSON Response.
+ * UC4 : Introducing Services Layer in AddressBook App.
+ * 			- This is the job of services layer to manage the Model.
+ * 			- Autowired Annotation will be used to do Dependency Injection of the Services Object to the Controller.
  *
  * @author : SAYANI KOLEY
  * @since : 14.08.2021
