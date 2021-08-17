@@ -88,14 +88,12 @@ public class ImplAddressBook implements IAddressBook{
     @Override
     public AddressBookDTO updateAddressDetails(int id, AddressBookDTO addressBookDTO) {
         log.info("Inside updateAddressDetails()");
-        AddressBookDTO addressBookResponse = null;
-        if (id > 0) {
-            AddressBook addressBookDetails = findAddressBookById(id);
-            String[] ignoreFields = {"id", "name", "createdDate"};
-            BeanUtils.copyProperties(addressBookDTO, addressBookDetails, ignoreFields);
-            addressBookRepository.save(addressBookDetails);
-            addressBookResponse = modelMapper.map(addressBookDetails, AddressBookDTO.class);
-        }
+        AddressBook addressBookDetails = findAddressBookById(id);
+        String[] ignoreFields = {"id", "name", "createdDate"};
+        BeanUtils.copyProperties(addressBookDTO, addressBookDetails, ignoreFields);
+        addressBookRepository.save(addressBookDetails);
+        AddressBookDTO addressBookResponse = modelMapper.map(addressBookDetails, AddressBookDTO.class);
+
         return addressBookResponse;
     }
 
@@ -111,12 +109,10 @@ public class ImplAddressBook implements IAddressBook{
     @Override
     public AddressBookDTO deleteAddressDetails(int id) {
         log.info("Inside deleteAddressDetails()");
-        AddressBookDTO addressBookResponse = null;
-        if (id > 0) {
-            AddressBook addressBook = findAddressBookById(id);
-            addressBookRepository.delete(addressBook);
-            addressBookResponse = modelMapper.map(addressBook, AddressBookDTO.class);
-        }
+        AddressBook addressBook = findAddressBookById(id);
+        addressBookRepository.delete(addressBook);
+        AddressBookDTO addressBookResponse = modelMapper.map(addressBook, AddressBookDTO.class);
+
         return addressBookResponse;
     }
 
