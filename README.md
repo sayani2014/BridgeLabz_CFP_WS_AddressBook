@@ -6,3 +6,4 @@
 3. Introducing DTO and Model to AddressBook App.
 4. Introducing Services Layer in AddressBook App.
 5. Ability for the Services Layer to store the AddressBook Data.
+6. Ability to add annotations for Date field.
